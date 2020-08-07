@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+            color:black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+            color: blanchedalmond;
+        }
+        .header{
+            width: 100%;
+            background-color: gray;
+            height:12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 13px;
+            margin-bottom: 20px;
+        }
+        .banner{
+            width: 100%;
+            background-color:rgb(53, 74, 112);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 16px 0 35px 0;
+            border-radius: 13px;
+        }
+        .circle{
+            width: 20%;
+            height:40vh;
+            border-radius: 50%;
+            background-color: rgb(224, 204, 22);
+            float:left;
+            margin:2.5%;
+        }
+        
+        .left-side{
+            width:48%;
+            background-color:teal;
+            height:80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 13px;
+        }
+        .article1, .article2, .article3{
+            background-color:indianred;
+            height:25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 13px;
+        }
+        .article2{
+            margin:2.5vh 0;
+        }
+        .right-side{
+            width:48%;
+            margin:15px;
+        }
+        .section2 {
+            width: 100%;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .block{
+            width: 20%;
+            height:50vh;
+            background-color:rgb(201, 37, 37);
+            float:left;
+            margin: 1% 2.5% 3.5% 2.5%;
+            border-radius: 13px;
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: rgb(114, 113, 113);
+            height:12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p align = "center">HEADER</p>
+        </div>
+        <div class="banner">
+            <p align = "center">BANNER</p>
+        </div>
+        <div class="section1" align = "center">
+            <h1>Section-1</h1>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <h1 align = "center">Section-2</h1>
+        <div class="section2">
+            <div class="left-side">Main Content</div>
+            <div class="right-side">
+                <div class="article1">Article-1</div>
+                <div class="article2">Article-2</div>
+                <div class="article3">Article-3</div>
+            </div> 
+        </div>
+        <div class="section3">
+            <h1 align = "center">Section-3</h1>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <h1 align = "center">Section-4</h1>
+        <div class="footer">FOOTER</div>
+    </div>
+    
+</body>
+</html>
