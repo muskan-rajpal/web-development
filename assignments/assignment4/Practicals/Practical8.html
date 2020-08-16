@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        *{  
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            scroll-padding: 150px;
+        }
+        body{
+            padding:0;
+            margin:0;
+        }
+        .container{
+            width: 1200px;
+            font-size: 22px;
+            color:rgb(27, 26, 23);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-shadow: 0px 0px 3px  rgba(0.15, 0.15, 0.15, 0.15);
+            padding: 15px;
+            margin:auto;
+            padding-top:0;
+        }
+        .header{
+            background-color: gray;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:sticky;
+            top:0;
+            z-index: 2;
+            margin: 0;
+            padding:0;
+        }
+        .header a{
+            color:white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .header a:hover{
+            background:white;
+            color:black;
+        }
+        .header .head{
+            padding: 5px 30px;
+        }
+        .banner img{
+            width: 100%;
+            background-color:rgb(53, 74, 112);
+            height: 750px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 16px 0 35px 0;
+        }
+        .banner h1{
+            color: white;
+            position: absolute;
+            margin-left: 15px;
+            padding-top:10px;
+        }
+        .banner{
+            margin-bottom: 15px;
+        }
+        .heading{
+            color:black;
+            text-align: center;
+            
+        }
+        .section1{
+            margin:15px;
+            margin-bottom: 15px;
+        }
+        .circle img{
+            height: 240px;
+            width: 240px;
+            border-radius: 50%;
+            background-color: rgb(224, 204, 22);
+            float:left;
+            margin: 20px;
+        }
+        .left-side p{
+            width:570px;
+            background-color:teal;
+            height:480px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding : 10px;
+        }
+        .left-side h3{
+            position: absolute;
+            padding: 2px 10px;
+        }
+        .article1 img, .article2 img, .article3 img{
+            background-color:indianred;
+            height:150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            width:570px;
+        }
+        .article1 h3, .article2 h3, .article3 h3{
+            position: absolute;
+            padding-left: 245px;
+            z-index: 1;
+            color:black;
+        }
+        .right-side{
+            float: right;
+            margin: 15px;
+        }
+        .section2 {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .section2::after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        
+        .footer{
+            padding-top: 10px;
+            background-color: rgb(114, 113, 113);
+            height: 80px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        /*.block{
+            height: 300px;
+            width: 250px;
+            background-color:rgb(201, 37, 37);
+            float:left;
+            margin: 20px;
+        }*/
+        .block{
+            width: 20%;
+            background: cornsilk;
+            padding: 15px;
+            border: 3px solid grey;
+            border-radius: 8px;
+            float: left;
+            margin: 20px 15px;
+            min-width: 260px;
+            box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.25);
+        }
+        .block img{
+            width: 100%;
+            height: 160px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .button{
+            display: block;
+            background: red;
+            text-align: center;
+            padding: 7px 0;
+            border-radius: 8px;
+            color:white;
+            text-decoration: none;
+            margin-top: 15px;
+            margin-bottom: 2px;
+        }
+        .button:hover{
+            background: blue;   
+        }
+        .block h3{
+            text-align: center;
+            margin-bottom: 3px;
+            margin-top: 3px;
+        }
+        .block p{
+            margin:8px 0;
+            overflow:initial;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id = "header">
+            <div class = "head"><a href = "#">HOME</a></div>
+            <div class = "head"><a href="#about">ABOUT US</a></div>
+            <div class = "head"><a href="#team">TEAM</a></div>
+            <div class = "head"><a href="#tech">TECHNOLOGIES</a></div>
+            <div class = "head"><a href="#contact">CONTACT</a></div>
+        </div>
+        <div class="banner">
+            <h1>PRACTICAL-8</h1>
+            <img src="../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
+        </div>
+        <h1 class = "heading" >Team Members</h1>
+        <div class="section1" id = "team">
+            <div class="circle"><img src="../Images/1.png" alt=""></div>
+            <div class="circle"><img src="../Images/2.png" alt=""></div>
+            <div class="circle"><img src="../Images/3.png" alt=""></div>
+            <div class="circle"><img src="../Images/9.png" alt=""></div>
+        </div>
+        <h1 class = "heading" >About Us</h1>
+        <div class="section2" id="about">
+            <div class="left-side">
+                <h3>My Projects</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam atque sapiente excepturi fuga placeat tempora asperiores error culpa deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas enim facilis quisquam soluta, deserunt minima maiores quia aspernatur dolores, quae at perferendis dolore sit officia quo tenetur facere voluptatum esse nobis temporibus unde modi? Repudiandae eligendi magnam saepe autem dignissimos architecto minima beatae aut consequatur, delectus veritatis ipsam explicabo cupiditate porro voluptates dolor in possimus ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, reiciendis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, quae.</p>
+            </div>
+            <div class="right-side">
+                <div class="article1">
+                    <h3>Project-1</h3>
+                    <img src="../Images/p1.jpg" alt="">
+                </div>
+                <div class="article2">
+                    <h3>Project-2</h3>
+                    <img src="../Images/p2.jpeg" alt="">
+                </div>
+                <div class="article3">
+                    <h3>Project-3</h3>
+                    <img src="../Images/p3.jpg" alt="">
+                </div>
+            </div> 
+        </div>
+        <h1 class = "heading" >Technologies Used</h1>
+        <div class="section3" id="tech">
+            <div class="block">
+                <img src="../Images/introductiontohtml.jpg" alt="HTML">
+                <h3>Introduction to HTML</h3>
+                <p>Hypertext Markup Language is the standard markup language for document designed to display in a web browser.</p>
+                <a class = 'button' href = "Practical5 Docs/HTML.html" target="_blank">Read More</a>
+            </div>
+            <div class="block">
+                <img src="../Images/Introductiontocss.jpg" alt="CSS">
+                <h3>Introduction to CSS</h3>
+                <p>Cascading Style Sheets (CSS) is a simple design language, intended to simplify the process of making web pages presentable.</p>            
+                <a class = 'button' href = "Practical5 Docs/CSS.html" target="_blank">Read More</a>
+            </div>
+            <div class="block">
+                <img src="../Images/introductiontojavascript.png" alt="JS">
+                <h3>Introduction to Javascript</h3>
+                <p>JavaScript (JS) is a cross-platform, object-oriented scripting language used to make webpages interactive.(e.g., clickable buttons)</p>            
+                <a class = 'button' href = "Practical5 Docs/JS.html" target="_blank">Read More</a>
+            </div>
+            <div class="block">
+                <img src="../Images/introductiontobootstrap.jpg" alt="Bootstrap">
+                <h3>Introduction to Bootstrap</h3>
+                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.</p>            
+                <a class = 'button' href = "Practical5 Docs/Bootstrap.html" target="_blank">Read More</a>
+            </div>
+        </div>
+
+        <h1 class = "heading" >Contact</h1>
+        <div class="footer" id="contact">
+            <div><p>Website Template for Practical-8 © <a style="text-decoration: none;" href="https://www.github.com/muskan-rajpal">Muskan</a></p></div>
+            <div><a href="#header">Back to top</a></div>
+        </div>
+    </div>
+    
+</body>
+</html>
