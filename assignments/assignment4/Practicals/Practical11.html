@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-11</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-radius: 6px;
+            border:2px solid black;
+            /* border-collapse: collapse; */
+            border-spacing: 0;
+            /* padding: 10px; */
+            margin: 30px auto;
+        }
+        tbody td, tbody th{
+            padding: 15px 15px;
+            /* border-top:1px solid rgb(122, 121, 121); */
+            border-bottom:1px solid rgba(122, 121, 121, 0.4);
+        }
+        tbody th{
+            text-align:left;
+            border-bottom-width: 2.5px;
+        }
+        thead th{
+            background:rgb(53, 52, 52);
+            color: white;
+            padding: 10px 5px;
+        }
+        td:nth-child(1){
+            width:50px;
+        }
+        td:nth-child(2){
+            width:500px;
+        }
+        td:nth-child(3){
+            width:170px;
+        }
+        td:nth-child(4){
+            width:200px;
+        }
+        td:nth-child(5){
+            width:100px;
+        }
+        .done{
+            color: green;
+        }
+        .undone{
+            color: red;
+        }
+        td a{
+            text-decoration: none;
+            color: black;
+            opacity: 0.7;
+        }
+        tr:hover{
+            background-color:rgb(240, 240, 240);
+            transition: 0.4s;
+        }
+        .fa{
+            font-size: 23px;
+            color:rgba(92, 89, 89, 0.7);
+            /* opacity: 0.7; */
+        }
+        .fa:hover{
+            color:rgb(28, 65, 228)
+        }
+        .fa-trash{
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">FullStack Live Practical Book</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>#</th>
+                <th>Practical Name</th>
+                <th>Link</th>
+                <th>Status</th>
+                <th>Tools</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Create a Web page including HTML basic skeleton using Offline HTML Editor and Online Sandbox Environment</td>
+                <td><a href="Practical1.html">Practical-1</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Live your First Web-Page on Git-Hub</td>
+                <td><a href="Practical2.html">Practical-2</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Create a web page showing a basic html structure using character Entities and span Tag</td>
+                <td><a href="Practical3.html">Practical-3</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Create a website having list of all practical and their individual practical Page links</td>
+                <td><a href="Practical4.html">Practical-4</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Create a Web-Page showing the use of Image-Map in the Web Application</td>
+                <td><a href="Practical5.html">Practical-5</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Create following layout using CSS layout properties</td>
+                <td><a href="Practical6.html">Practical-6</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Create a Webpage Layout using div tag</td>
+                <td><a href="Practical7.html">Practical-7</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Create a Webpage having Fixed Navigation Bar with the given content</td>
+                <td><a href="Practical8.html">Practical-8</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Create a Responsive Web Layout with Responsive Navigation Bar</td>
+                <td><a href="Practical9.html">Practical-9</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Create a Responsive Side-Bar Navigation Menu</td>
+                <td><a href="Practical10.html">Practical-10</a></td>
+                <td class="done">Checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Create FullStack Live Practical Book</td>
+                <td><a href="Practical11.html">Practical-11</a></td>
+                <td class="undone">Un-checked</td>
+                <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
+            </tr>
+        </table>
+    </tbody>
+</body>
+</html>

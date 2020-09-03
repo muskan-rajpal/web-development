@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            background: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+        .header img{
+            width: 75px;
+            height: 70px;
+        }
+        .header h1{
+            margin-left: 10px;
+            line-height: 75px;
+            color: white;
+        }
+        .content{
+            margin-top: 80px;
+            width: 100%;
+            padding: 20px;
+            float: right;
+            transition: 0.5s;
+        }
+        .content img{
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: auto;
+        }
+        .content p{
+            padding-top: 15px;
+            text-align: justify;
+        }
+        .bar{
+            width: 20%;
+            height: 100%;
+            position: fixed;
+            top: 80px;
+            background-color:#353b48;
+            left: -100%;
+            transition: 0.5s;
+        }
+        .bar ul{
+            list-style: none;
+        }
+        .bar ul li{
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .bar ul li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            padding: 15px 15px;
+        }
+        .bar a i{
+            margin-right:15px;
+        }
+        .bar ul li a:hover{
+            border-left: 10px solid white;
+            transition: 0.4s;
+        }
+        .social{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 30px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            border-top:2px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            margin-top: 220px; 
+        }
+        i{
+            font-size: 30px;
+            color: white;
+        }
+        .show-btn, .hide-btn{
+            font-size: 35px;
+            color:white;
+            position: fixed;
+            top: 20px;
+            left:40px;
+        }
+        .hide-btn{
+            opacity: 0;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ .bar{
+            left: 0;
+        }
+        #check:checked ~ .show-btn{
+            opacity: 0;
+        }
+        #check:checked ~ .hide-btn{
+            opacity: 1;
+        }
+        #check:checked ~ .content{
+            width: 80%;
+        }
+        @media (max-width: 768px){
+            .bar{
+                width: 100%;
+                text-align: center;
+            }
+            .header h1{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../Images/fullstack-logo.png" alt="logo">
+        <h1>FULLSTACK</h1>
+    </div>
+    <input type="checkbox" name="" id="check">
+    <label for="check" class = "show-btn"> 
+        <i class = "fa fa-bars"></i>
+    </label>
+    <label for="check" class = "hide-btn"> 
+        <i class = "fa fa-times"></i>
+    </label>
+    <div class="bar">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i><span>Services</span></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i><span>Blog</span></a></li>
+            <li><a href="#"><i class="fa fa-phone-square"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
+        <p>Full stack development refers to the development of both front end(client side) and back end(server side) portions of web application. Full stack web developers have the ability to design complete web application and websites. They work on the frontend, backend, database and debugging of web application or websites. They are proficient in both front-end and back-end languages and frameworks, as well as in server, network and hosting environments. To get to this breadth and depth of knowledge, most full-stack developers will have spent many years working in a variety of different roles. They also tend to be well-versed in both business logic and user experience, meaning they are not only well-equipped to get hands on, but can also guide and consult on strategy too. Rather than having to develop complex proprietary code every time for creating different websites, frameworks have become popular resources to make many processes more efficient and convenient. Libraries like jQuery are extremely popular for front-end developers using Javascript, as they can implement various functions that other developers have already cultivated and tested. Javascript frameworks like AngularJS and EmberJS solve many of the challenges faced by front-end developers by developing conventions that can easily be implemented with any website. On the backend, there are frameworks like Rails for the programming language of Ruby, Django for Python, and CakePHP for working with PHP. The main purpose of frameworks is to make a developer’s job easier by developing a set of conventions that can be adopted for many of the different processes involved in creating a website—from how information is displayed to how it is stored and accessed in the database.
+            <br>
+            <br>
+            <br>
+            <b><u>Technology related to full stack development:</u></b>
+            <br>
+            <br>
+            <br>
+            <b><u>Front end:</u></b> It is the visible part of website or web application which is responsible for user experience. The user directly interacts with the front end portion of the web application or website.
+            <br>
+            <br>
+            <b>Front end Languages:</b> The front end portion is built by using some languages which are discussed below: <br>
+            <br>
+            <b>HTML:</b> HTML stands for Hyper Text Markup Language. It is used to design the front end portion of web pages using markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. The markup language is used to define the text documentation within tag which defines the structure of web pages. <br>
+            <br>
+            <b>CSS:</b> Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page.<br>
+            <br>
+            <b>JavaScript:</b> JavaScript is a famous scripting language used to create the magic on the sites to make the site interactive for the user. It is used to enhancing the functionality of a website to running cool games and web-based software. <br>
+            <br>
+            <br>
+            <b>Front End Frameworks and Libraries: </b>
+            <br>
+            <b>AngularJS:</b> AngularJs is a JavaScript open source front-end framework that is mainly used to develop single page web applications(SPAs). It is a continuously growing and expanding framework which provides better ways for developing web applications. It changes the static HTML to dynamic HTML. It is an open source project which can be freely used and changed by anyone. It extends HTML attributes with Directives, and data is bound with HTML. <br>
+            <br>
+            <b>React.js: </b> React is a declarative, efficient, and flexible JavaScript library for building user interfaces. ReactJS is an open-source, component-based front end library responsible only for the view layer of the application. It is maintained by Facebook.<br>
+            <br>
+            <b>Bootstrap:</b> Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.
+            <br>
+            <b>jQuery: </b>jQuery is an open source JavaScript library that simplifies the interactions between an HTML/CSS document, or more precisely the Document Object Model (DOM), and JavaScript. Elaborating the terms, jQuery simplifies HTML document traversing and manipulation, browser event handling, DOM animations, Ajax interactions, and cross-browser JavaScript development. <br>
+            <br>
+            <b>SASS: </b> It is the most reliable, mature and robust CSS extension language. It is used to extend the functionality of an existing CSS of a site including everything from variables, inheritance, and nesting with ease.<br>
+            Some other libraries and frameworks are: Semantic-UI, Foundation, Materialize, Backbone.js, Express.js, Ember.js etc. <br>
+            <br>
+            <br>
+            <b><u>Back end:</u></b> It refers to the server-side development of web application or website with a primary focus on how the website works. It is responsible for managing the database through queries and APIs by client-side commands. This type of website mainly consists of three parts front end, back end, and database.<br>
+            <br>
+            <br>
+            <b>The back end portion is built by using some libraries, frameworks, and languages which are discussed below:</b><br>
+
+            <b>PHP:</b> PHP is a server-side scripting language designed specifically for web development. Since, PHP code executed on server side so it is called server side scripting language.<br>
+            <br>
+            <b>C++:</b> It is a general purpose programming language and widely used now a days for competitive programming. It is also used as backend language.<br>
+            <br>
+            <b>Java:</b>Java is one of the most popular and widely used programming language and platform. It is highly scalable. Java components are easily available.<br>
+            <br>
+            <b>Python:</b> Python is a programming language that lets you work quickly and integrate systems more efficiently.<br>
+            <br>
+            <b>JavaScript:</b>Javascript can be used as both (front end and back end) programming languages.<br>
+            <br>
+            <b>Node.js:</b> Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser. You need to remember that NodeJS is not a framework and it’s not a programming language. Most of the people are confused and understand it’s a framework or a programming language. We often use Node.js for building back-end services like APIs like Web App or Mobile App. It’s used in production by large companies such as Paypal, Uber, Netflix, Wallmart and so on. <br>
+            <br>
+            <b>Back End Frameworks:</b> The list of back end frameworks are: Express, Django, Rails, Laravel, Spring etc.<br>
+            The other back end program/scripting languages are: C#, Ruby, REST, GO etc.
+        </p>
+    </div>
+
+</body>
+</html>
