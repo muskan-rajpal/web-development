@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings Clock</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        height: 100vh;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    #time {
+        font-size: 8rem;
+        /*(8*16px) */
+
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        opacity: .5;
+    }
+
+    #day {
+        margin-top: 1rem;
+    }
+</style>
+
+<body>
+    <time id="time"></time>
+    <h1 id="greet"></h1>
+    <h2 id="name" contenteditable="true"></h2>
+    <h3 id="day"></h3>
+    <script src="../Javascript/Practical17.js"></script>
+</body>
+
+</html>
